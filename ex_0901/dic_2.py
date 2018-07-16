@@ -10,9 +10,6 @@ for name in names:
 
 print(counts)
 
-counts = dict()
-names = ['csev', 'cwen', 'csev', 'zqian','cwen']
-
 # get 메소드를 통해 값이 존재하면 +1 아니면 0으로 초기화
 for name in names:
     counts[name] = counts.get(name, 0) + 1
