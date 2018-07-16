@@ -16,4 +16,4 @@ lst = sorted(lst, reverse= True)    # 내림차순 정렬
 
 
 for v, k in lst[:10]:
-    print()
+    print(k, v)
