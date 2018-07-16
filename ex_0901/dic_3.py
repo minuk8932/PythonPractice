@@ -8,3 +8,9 @@ print(counts.keys())
 
 # 값만 탐색
 print(counts.values())
+
+# 튜플을 이용한 값과 키를 쌍으로 리스트로 변환 출력
+print(counts.items())
+
+for k, v in counts.items():
+    print(k, v)
