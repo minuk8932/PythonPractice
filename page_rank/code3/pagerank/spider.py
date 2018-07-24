@@ -35,7 +35,8 @@ else :
     web = starturl
     if ( starturl.endswith('.htm') or starturl.endswith('.html') ) :
         pos = starturl.rfind('/')
-        web = starturl[:pos]
+        starturl = starturl[:pos]
+        web = starturl
 
     if ( len(web) > 1 ) :
         cur.execute('INSERT OR IGNORE INTO Webs (url) VALUES ( ? )', ( web, ) )
